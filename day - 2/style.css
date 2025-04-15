@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    min-width: 350px;
+    margin: 10px 10px 10px;
+    padding: 25px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-20px);
+   
+  
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.success {
+    background-color: #4CAF50;
+}
+
+.toast.error {
+    background-color: #F44336; 
+}
+
+.toast.warning {
+    background-color: #694207; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.btn1, .btn2, .btn3 {
+    height: 50px;
+    width: 100px; 
+    color: white;
+    margin: 10px; 
+    border: none;
+    border-radius: 25px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn1 {
+    background-color: #63e769; 
+}
+
+.btn2 {
+    background-color: #33C1FF;
+}
+
+.btn3 {
+    background-color: #FFC300;
+}
+
+.btn1:hover {
+    background-color: #228617; 
+    transform: translateY(-2px); 
+}
+
+.btn2:hover {
+    background-color: #0099CC; 
+    transform: translateY(-2px); 
+}
+
+.btn3:hover {
+    background-color: #FFB300;
+    transform: translateY(-2px);
+}
+
+.btn1:active, .btn2:active, .btn3:active {
+    transform: translateY(1px);
+}
+
+.btn1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.btn2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.btn3 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
