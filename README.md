@@ -1,1 +1,1 @@
-# 30-days---javascript-projects
+# 30-days---javascript-projects daily
